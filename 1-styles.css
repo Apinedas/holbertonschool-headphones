@@ -363,7 +363,6 @@ a:active {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* Main
     ======================== */
 
@@ -398,7 +397,7 @@ a:active {
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
-    font-size: var(--font-size-x-large);
+    font-size: var(--font-size-medium);
 }
 
 .navbar input,
@@ -437,7 +436,7 @@ a:active {
 
 /* Mobile
     =================== */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 760px) {
 
     .navbar label {
         display: block;
@@ -474,7 +473,7 @@ a:active {
         display: flex;
         flex-direction: column;
         height: min-content;
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
 
     .navbar input:checked~.nav-toggle .menu {
@@ -501,5 +500,60 @@ a:active {
 
     .hero-titles {
         text-align: center;
+        font-size: var(--font-size-medium);
     }
+}
+/* What we do section
+=================================*/
+
+.what-we-do-section {
+    color: var(--color-black);
+    font-size: var(--font-size-large);
+}
+
+.what-we-do-section .wwd-description {
+    width: 50%;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.what-we-do-section .wwd-icons-section {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.what-we-do-section .wwd-icons-section .wwd-icon-item {
+    width: 20rem;
+    min-width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.holberton_school-icon {
+    color: var(--color-primary);
+    font-size: 10rem;
+}
+
+.holberton_school-icon-sound:before {
+    content: "\e90e";
+}
+
+.holberton_school-icon-movie:before {
+    content: "\e910";
+}
+
+.holberton_school-icon-music:before {
+    content: "\e90d";
+}
+
+.holberton_school-icon-ear:before {
+    content: "\e909";
 }

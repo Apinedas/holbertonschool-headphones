@@ -450,7 +450,7 @@ a:active {
         top: 20px;
     }
 
-    .headphones-icon {
+    .header-main .headphones-icon {
         position: absolute;
         margin: 0;
         left: auto;
@@ -502,6 +502,23 @@ a:active {
         text-align: center;
         font-size: var(--font-size-medium);
     }
+
+    .media-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media-icons {
+        display: inline-block;
+        min-width: 100%;
+        margin: auto;
+    }
+
+    .social-media-icons * {
+        margin: .2rem 0;
+        padding: 0;
+    }
 }
 
 /* What we do section
@@ -520,7 +537,7 @@ a:active {
 }
 
 .what-we-do-section .wwd-icons-section {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -532,7 +549,7 @@ a:active {
 
 .what-we-do-section .wwd-icons-section .wwd-icon-item {
     width: 20rem;
-    min-width: 10%;
+    min-width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -571,7 +588,7 @@ a:active {
 }
 
 .our-results-section .our-results-hex-section {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -605,4 +622,65 @@ a:active {
 .our-results-hex-title, .our-results-hex-paragraph {
     margin: 0;
     padding: 0;
+}
+
+/* Contact Us section
+========================================= */
+
+.contact-us-section {
+    width: 50%;
+    color: var(--color-black);
+    margin: auto;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-us-section .contact-us-field {
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    border-bottom: 1px var(--color-grey) solid;
+    padding: 2rem 0;
+}
+
+.contact-us-section .contact-us-field::placeholder {
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
+    opacity: 0.89
+}
+
+/* Footer
+=========================================== */
+
+.headphones-footer {
+    background-color: #071629;
+    height: 20rem;
+    bottom: 0;
+    padding-top: 2rem;
+}
+
+.media-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 2rem;
+    padding: 1%;
+}
+
+.social-media-icons {
+    width: 20%;
+    padding: 0;
+}
+
+.social-item svg {
+    fill: var(--color-white);
+}
+
+.copyright-footer {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: var(--font-size-small);
+    color: var(--color-grey);
 }
